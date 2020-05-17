@@ -24,6 +24,7 @@ public class SecServiceApplication {
             Stream.of("user1","user2","user3","admin").forEach(un->{
                 accountSerive.saveUser(un,"12345","12345");
             });
+            accountSerive.addRoleToUser("admin","ADMIN");
 
         };
 
